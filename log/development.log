@@ -561,3 +561,27 @@ Processing by AlbumsController#index as HTML
 Completed 200 OK in 67ms (Views: 44.8ms | ActiveRecord: 0.8ms | Allocations: 38234)
 
 
+Started GET "/" for 127.0.0.1 at 2022-04-15 12:28:03 +1000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AlbumsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering albums/index.html.erb within layouts/application
+  [1m[36mAlbum Load (0.1ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  ↳ app/views/albums/index.html.erb:4
+  Rendered albums/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 6501)
+  Rendered layout layouts/application.html.erb (Duration: 51.8ms | Allocations: 29817)
+Completed 200 OK in 72ms (Views: 54.4ms | ActiveRecord: 0.5ms | Allocations: 38209)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-15 12:28:06 +1000
+Processing by AlbumsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering albums/index.html.erb within layouts/application
+  [1m[36mAlbum Load (0.1ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  ↳ app/views/albums/index.html.erb:4
+  Rendered albums/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1043)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3760)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.1ms | Allocations: 4171)
+
+
